@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Blog Page</title>
 </head>
 <body>
-    <header>
-        <div class="logo"><img src="./images/logo.png" alt="logo"></div>
+    <div class="blog-page">
+    <header class="header-blog">
+        <div class="logo"><img class="logo-pic" src="./images/logo.png" alt="logo"></div>
         <nav>
             <a class="nav-links" href="./index.html">Home</a>
             <a class="nav-links" href="./about.html">About</a>
@@ -23,15 +24,40 @@
             <a class="nav-links" href="./contact.html">Contact</a>
         </nav>
     </header>
-<!-- https://picsum.photos -->
-    <main>
+<!-- https://picsum.photos/id/#/400 -->
+    <div class="blog-title">
+        <h2>Blog</h2>
+    </div>
 
+    <section class="blog-a">
+        <img class="blog-img" src="https://picsum.photos/id/151/400" alt="picture">
+        <article class="blog-one">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam neque, nostrum ea magnam aliquam pariatur quos numquam delectus saepe minima!</p>
+        <button>Read More</button>
+        </article>
+    </section>
+ 
+    <section class="blog-b">
+        <img class="blog-img" src="https://picsum.photos/id/192/400" alt="picture">
+        <article class="blog-two">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium similique consectetur, sit ab dolorum facilis, corrupti aut magnam animi illum delectus aliquam. Aliquid recusandae nisi expedita quia nostrum. Saepe!</p>
+        <button>Read More</button>
+        </article>
+    </section>
 
+    <section class="blog-c">
+        <img class="blog-img"src="https://picsum.photos/id/236/400" alt="picture">
+        <article class="blog-three">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nesciunt distinctio dolore saepe perspiciatis pariatur nostrum repellendus magni temporibus rerum iusto ex reprehenderit ipsam ipsum earum sapiente minima nam impedit commodi illum quasi! Distinctio doloremque quas mollitia quasi. Neque, repellendus.</p>
+        <button>Read More</button>
+        </article>
+    </section>
 
-    </main>
-
-    <footer>
-        <section>
+    <footer class="footer">
+        <section class="copyright">
             <p><span>&copy;</span> By logo. All rights reserved</p>
         </section>
         <section class="social-bar">
@@ -43,5 +69,6 @@
         </section>
 
     </footer>
+    </div>
 </body>
 </html>

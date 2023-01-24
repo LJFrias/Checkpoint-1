@@ -47,8 +47,8 @@ h3 {
 .homemain-text > h3, .homemain-text > p {
     background-color: black;
     color: white;
-    
-
+    text-align: center;
+    width: 75%;
 }
 
 .home-a {
@@ -215,6 +215,76 @@ h3 {
   background-color: rgb(39, 36, 36);
   padding: 0 100px;
 }
+
+/* Contact Page */
+
+.contact-page {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 18% 4% 1fr 13%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header-contact header-contact header-contact"
+    ". contact-title ."
+    ". contact-form ."
+    "footer footer footer"; 
+}
+.header-contact { grid-area: header-contact; }
+.footer { grid-area: footer; }
+.contact-title { grid-area: contact-title; }
+.contact-form { grid-area: contact-form; }
+
+
+
+.contact-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.contact-title > h2{
+  color: white;
+  background-color: rgb(39, 36, 36);
+  padding: 0 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  
+}
+
+input {
+  text-align: center;
+  width: 80%;
+  height: 8%;
+  box-sizing: border-box;
+  border: solid black;
+}
+
+textarea {
+  text-align: center;
+  width: 80%;
+  height: 25%;
+  box-sizing: border-box;
+  border: solid black;
+  font-size: 20px;
+}
+
+button {
+  background-color: grey;
+  color: white;
+  border: solid black;
+  width: 120px;
+  height: 50px;
+}
+
+
   
 
 /* Footer */
@@ -296,6 +366,11 @@ footer {
       .home-b {
         display: flex;
         justify-content: space-around;
+      }
+
+      .homemain-text > h3, .homemain-text > p {
+        width: 70%;
+        height: 120%;
       }
 
       .nav-links {
@@ -441,6 +516,11 @@ footer {
     justify-content: space-around;
   }
 
+  .homemain-text > h3, .homemain-text > p {
+    width: 120%;
+    height: 85%;
+  }
+
   /* About Page */
   
   .about-page {
@@ -543,8 +623,11 @@ footer {
   width: 100%;
 }
 
+
+
 .blog-title > h2 {
   font-size: 1.5em;
+  margin: 0 0 50px 0;
 }
 
 .blog-a, .blog-b, .blog-c {
@@ -575,6 +658,17 @@ footer {
 
 .blog-one > p, .blog-two > p, .blog-three > p {
   padding: 0;
+}
+
+/* Contact Page */
+
+.header-contact {
+  height: 250px;
+  width: 100%;
+}
+
+.contact-title {
+  margin: auto;
 }
 
 }
